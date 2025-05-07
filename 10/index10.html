@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Alerts and popups in Selenium</h1>
+
+    <div align="center"><button id="popupButton">PopUp</button></div>
+    <div align="center">
+      <img
+        src="sel.png"
+        class="popup-img"
+        alt="Selenium Popup"
+        width="400"
+        height="400"
+      />
+    </div>
+
+    <script type="text/javascript">
+      document.getElementById("popupButton").onclick = function () {
+        var popup = window.open("", "myWindow", "width=400,height=200");
+        popup.document.write("<p>This is a Selenium popup window</p>");
+      };
+    </script>
+  </body>
+</html>
